@@ -115,8 +115,8 @@ frame-it() {
 ```
 
 Then `frame-it` on its own is clipboard in and clipboard out, and `frame-it ./images` does a
-folder. **This is already installed in Marcelo's `~/.zshrc`** — when he is at a terminal,
-point him at `frame-it` rather than running the script through a tool call.
+folder. **If that function is in the user's shell, point them at `frame-it`** rather than
+running the script through a tool call: it is faster for them and costs no tokens.
 
 ## Capturing in the first place
 

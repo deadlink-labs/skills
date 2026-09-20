@@ -9,7 +9,8 @@ A skill is global when it sits in `~/.claude/skills/<name>/`. Symlink it, so the
 runs is the one in this folder and an edit here is live everywhere:
 
 ```bash
-ln -s /Volumes/AV/a-big-folder/projects/deadlink-labs/repos/skills/claude/<name> ~/.claude/skills/<name>
+# from this folder
+ln -s "$(pwd)/<name>" ~/.claude/skills/<name>
 ```
 
 Check it with `/skills` in a session, or just ask for the thing the skill does — the
