@@ -11,7 +11,7 @@ just the list of the public ones.
 A skill is global when it sits in `~/.claude/skills/<name>/`. Clone it straight there:
 
 ```bash
-git clone https://github.com/deadlink-labs/skill-<name> ~/.claude/skills/<name>
+git clone https://github.com/deadlink-labs/<name> ~/.claude/skills/<name>
 ```
 
 To work on a skill, clone it anywhere and symlink it instead, so the file that runs is the
@@ -29,11 +29,11 @@ Check it with `/skills` in a session, or just ask for the thing the skill does â
 
 | skill | does |
 |---|---|
-| [frame-screenshot](https://github.com/deadlink-labs/skill-frame-screenshot) | macOS-style framing for any image: rounded corners, drop shadow, transparent margins, optional aspect padding. Clipboard in and out (`-c`), a whole folder in place (`*_fi`, re-runnable), or the newest screenshot (`--last`). Shell function `frame-it` in `~/.zshrc`. Needs Pillow; numpy only for `--detect`. |
+| [Frame It!](https://github.com/deadlink-labs/frame-it) Â· `frame-it` | macOS-style framing for any image: rounded corners, drop shadow, transparent margins, optional aspect padding. Clipboard in and out (`-c`), a whole folder in place (`*_fi`, re-runnable), or the newest screenshot (`--last`). Shell function `frame-it` in `~/.zshrc`. Needs Pillow; numpy only for `--detect`. |
 
 ## Notes
 
-- One repo per skill, named `skill-<name>`, with `SKILL.md` at its root and code under
+- One repo per skill, named after the skill, with `SKILL.md` at its root and code under
   `scripts/`.
 - The `description` is the trigger. Write it as *when to use this*, with the words a person
   would actually say, not a summary of the implementation.
