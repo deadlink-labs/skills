@@ -1,2 +1,5 @@
 .DS_Store
 __pycache__/
+
+# every skill folder is its own repo; this repo only keeps the list
+claude/*/
